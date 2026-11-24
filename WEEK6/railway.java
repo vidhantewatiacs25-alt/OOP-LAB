@@ -1,14 +1,12 @@
 
 import java.util.Scanner;
 
-// Custom Exception
 class SeatAlreadyBookedException extends Exception {
     SeatAlreadyBookedException(String message) {
         super(message);
     }
 }
 
-// Reservation Class
 class Reservation {
     private boolean[] seats;
 
@@ -16,7 +14,6 @@ class Reservation {
         seats = new boolean[totalSeats];
     }
 
-    // Method to reserve a seat
     public void reserveSeat(int seatNumber)
             throws SeatAlreadyBookedException {
 
@@ -39,8 +36,6 @@ class Reservation {
         );
     }
 }
-
-// Main Class
 public class RailwayReservation {
     public static void main(String[] args) {
 
