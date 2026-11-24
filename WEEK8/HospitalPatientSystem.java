@@ -3,7 +3,6 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-// Generic class
 class PatientRecord<T1, T2> {
     T1 patientID;
     T2 doctorAssigned;
@@ -19,7 +18,6 @@ class PatientRecord<T1, T2> {
     }
 }
 
-// Main class
 public class HospitalPatientSystem {
     public static void main(String[] args) throws IOException {
 
