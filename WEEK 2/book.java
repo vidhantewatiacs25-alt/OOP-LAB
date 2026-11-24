@@ -7,7 +7,6 @@ class Book {
 
     static int totalBooks = 0;
 
-    // Constructor
     Book(int bookId, String title, String author, double price) {
         this.bookId = bookId;
         this.title = title;
@@ -15,8 +14,6 @@ class Book {
         this.price = price;
         totalBooks++;
     }
-
-    // Display book information
     void display() {
         System.out.println("Book ID: " + bookId);
         System.out.println("Title: " + title);
@@ -25,7 +22,6 @@ class Book {
         System.out.println();
     }
 
-    // Search by Book ID
     void search(int id) {
         if (bookId == id)
             System.out.println("Book found: " + title);
@@ -33,7 +29,6 @@ class Book {
             System.out.println("Book ID not found");
     }
 
-    // Search by Title
     void search(String name) {
         if (title.equalsIgnoreCase(name))
             System.out.println("Book found: " + title);
@@ -41,7 +36,6 @@ class Book {
             System.out.println("Book Title not found");
     }
 
-    // Return the costlier book
     Book costlierBook(Book b) {
         if (this.price > b.price)
             return this;
